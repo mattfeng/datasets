@@ -16,15 +16,15 @@ const File = ({ filename, md5sum }) => {
         className={styles.filenameContainer}
       >
         {filename}
+        {showHash && (
+          <span
+            style={{ top: `${position.y - 20}px`, left: `${position.x + 5}px` }}
+            className={styles.hashContainer}
+          >
+            (md5sum: {md5sum})
+          </span>
+        )}
       </span>
-      {showHash && (
-        <span
-          style={{ top: `${position.y - 20}px`, left: `${position.x + 5}px` }}
-          className={styles.hashContainer}
-        >
-          (md5sum: {md5sum})
-        </span>
-      )}
     </>
   )
 }
