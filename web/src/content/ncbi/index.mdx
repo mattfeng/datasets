@@ -1,0 +1,27 @@
+# NCBI GenBank and GenPept
+
+## [GenBank Flat File Format](https://www.ddbj.nig.ac.jp/ddbj/feature-table-e.html)
+
+### GenBank Feature Keys
+
+Features in a GenBank file provide information about segments of the macromolecule's sequence:
+  - e.g. for DNA: introns, exons
+  - e.g. for proteins: active site, signal peptide,
+- list of feature keys: https://www.ddbj.nig.ac.jp/ddbj/features-e.html
+- feature/qualifier usage matrix: https://docs.google.com/spreadsheets/d/1qosakEKo-y9JjwUO_OFcmGCUfssxhbFAm5NXUAnT3eM/edit#gid=0
+- [`mat_peptide`](https://www.ebi.ac.uk/ena/WebFeat/mat_peptide_s.html). mature peptide or protein coding sequence; coding sequence for the mature or final peptide or protein product **following post-translational modification**; the location does not include the stop codon (unlike the corresponding CDS).
+- `Site` and `Region`. only in GenPept files, sourced from external databases.
+  - `Sites` are single 
+
+### Locations
+
+#### Operators
+- `complement`
+- `join`
+- `order`
+
+## Papers
+- GenBank: https://academic.oup.com/nar/article/35/suppl_1/D21/1116856
+- UniProt: https://academic.oup.com/nar/article/45/D1/D158/2605721
+- UniProt 2021: https://academic.oup.com/nar/article/49/D1/D480/6006196
+- CDD: https://academic.oup.com/nar/article/39/suppl_1/D225/2507607
